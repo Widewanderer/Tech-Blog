@@ -26,7 +26,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
-
+     // include decoding of password? 
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -59,3 +59,5 @@ router.post('/logout', (req, res) => {
 });
 
 module.exports = router;
+
+// This file has been modified 
