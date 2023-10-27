@@ -15,7 +15,7 @@ if (process.env.JAWSDB_URL) {
       host: "127.0.0.1", // localhost
       dialect: "mysql",
       port: 3306, // default port for mysql (3001 is for express)
-      models: [__dirname + "/models"],
+      // models: [__dirname + "/models"],
     }
   );
 }
