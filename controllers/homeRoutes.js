@@ -25,6 +25,7 @@ router.get("/", async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
@@ -51,9 +52,6 @@ router.get("/post/:id", async (req, res) => {
   }
 });
 
-
-
-
 // Use withAuth middleware to prevent access to route
 router.get("/profile", withAuth, async (req, res) => {
   try {
@@ -64,6 +62,7 @@ router.get("/profile", withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
+    console.log(user);
 
     res.render("profile", {
       ...user,
@@ -86,5 +85,4 @@ router.get("/login", (req, res) => {
 
 module.exports = router;
 
-
-// This file has been modified 
+// This file has been modified
