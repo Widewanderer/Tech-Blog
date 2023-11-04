@@ -7,7 +7,7 @@ header, .post:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #0fbe09;
   text-decoration: none;
   font-size: 100%;
 }
@@ -17,8 +17,14 @@ header, .post:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+a {
+  color: #2a2a2a;
+}
+
+header {
+  background-color: #066003;
+}
+
+body {
+  background-color: rgba(142, 148, 157, 0.952);
 }
