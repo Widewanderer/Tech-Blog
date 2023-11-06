@@ -1,17 +1,12 @@
 <div class="text-center">
   <h2>{{title}}</h2>
-  <p>{{{get_emoji}}}</p>
   <p>{{content}}</p>
-  <p>Created by {{user.firstname}} {{user.lastname}} 
+  <p>Created by
+    {{User.firstName}}
+    {{User.lastName}}
     {{!-- {{format_date date_created}} --}}
-    </p>
-  <p>
+  </p> 
     The Section below should contain the comments
-
-    {{!-- <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed --}}
-  </p>
   <p>
     <button class="btn btn-primary">Comment</button>
   </p>
