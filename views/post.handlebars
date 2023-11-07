@@ -6,7 +6,10 @@
     {{User.lastName}}
     {{!-- {{format_date date_created}} --}}
   </p> 
+  {{#each Comments as |comment|}}
     The Section below should contain the comments
+    {{content}}
+  {{/each}}
   <p>
     <button class="btn btn-primary">Comment</button>
   </p>
