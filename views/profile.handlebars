@@ -31,17 +31,18 @@
     </form>
   </div>
 
-  {{#if post.length}}
-    <div class="col-md-6 project-list">
+  {{#if Posts.length}}
+    <div class="col-md-6 post-list">
       <h3>Past Posts:</h3>
 
-      {{#each posts as |post|}}
+      {{#each Posts as |post|}}
         <div class="row mb-2">
           <div class="col-md-8">
             <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
           </div>
           <div class="col-md-4">
             <button
+            type="delete"
               class="btn btn-sm btn-danger"
               // are quotations needed around post.id?
               data-id="{{post.id}}"

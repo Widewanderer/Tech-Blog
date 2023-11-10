@@ -11,6 +11,14 @@
     {{content}}
   {{/each}}
   <p>
-    <button class="btn btn-primary">Comment</button>
+    <button id="comment-button" class="btn btn-primary">Comment</button>
   </p>
 </div>
+<div id="comment-section" class="hide" data-post_id="{{id}}">
+  <h3>Leave a comment</h3>
+  <div>
+    <textarea id="comment-form"> </textarea>
+    <button id="submit-button" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+<script src="../js/comment.js"></script>
