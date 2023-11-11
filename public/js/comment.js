@@ -22,7 +22,7 @@ if (content) {
         },
     });
     if (response.ok) {
-        document.location.replace( `/post/${comment}` );
+        document.location.replace( `/post/${post_id}` );
     } else {
         alert("Failed to create comment");
     }
