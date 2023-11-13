@@ -45,3 +45,22 @@ p {
 .hide {
   display: none;
 }
+.comment-container, .comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+#comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.footer {
+padding-left: 20px;
+}

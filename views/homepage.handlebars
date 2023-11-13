@@ -9,7 +9,7 @@
             {{{get_emoji}}}
             <a href="/post/{{post.id}}">{{post.title}}</a>
           </h2>
-          <p class="card-subtitle text-muted">Created by {{User.firstName}} {{User.lastName}}</p>
+          <p class="card-subtitle text-muted">Created by {{User.firstName}} {{User.lastName}} on {{format_date post.createdAt}}</p>
           <p class="card-text">{{post.content}}</p>
         </div>
       </div>
