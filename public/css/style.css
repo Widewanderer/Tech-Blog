@@ -45,12 +45,18 @@ p {
 .hide {
   display: none;
 }
+
 .comment-container, .comment-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; 
+  padding: 10px;
+}
+
+#comment-div {
+  width: 90%;
 }
 
 #comment-section {
@@ -59,6 +65,11 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center; 
+}
+
+#comment-form {
+  width: 100%;
+  height: 100px;
 }
 
 .footer {
