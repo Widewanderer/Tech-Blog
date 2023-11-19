@@ -2,29 +2,35 @@
   <h2>{{title}}</h2>
   <p>{{content}}</p>
   <p>Created by
+    {{!-- why is user and date not working?  --}}
     {{User.firstName}}
     {{User.lastName}}
     on
     {{format_date p.createdAt}}
   </p>
   <button id="comment-button" class="btn btn-primary">Comment</button>
-  <button id="edit-button" class="btn btn-primary">Edit Post</button>
+  <button id="update-button" class="btn btn-primary">Edit Post</button>
   <button id="delete-button" class="btn btn-primary">Delete Post</button>
 </div>
-  {{#each Comments as |comment|}}
-  {{/each}}
+{{#each Comments as |comment|}}
   <p class="comment-container">
-    {{content}} 
-    Comment by {{User.firstName}}
-    {{User.lastName}} on
-    {{format_date createdAt}}
+    {{content}}
+    Comment by
+    {{User.firstName}}
+    {{User.lastName}}
+    on
+    {{comment.created_at}}
   </p>
-</div>
-<div id="comment-section" class="hide">
-  <h3>Leave a comment</h3>
-  <div id="comment-div">
-    <textarea id="comment-form" data-post_id="{{id}}"> </textarea>
-    <button id="submit-button" class="btn btn-primary">Submit</button>
+{{/each}}
+<div id="comment-hide" class="hide">
+  <div id="comment-section">
+    <h3>Leave a comment</h3>
+    <div id="comment-div">
+      <textarea id="comment-form" data-post_id="{{id}}"> </textarea>
+      <button id="submit-button" class="btn btn-primary">Submit</button>
+    </div>
   </div>
 </div>
 <script src="../js/comment.js"></script>
+<script src="../js/post.js"></script>
+```
