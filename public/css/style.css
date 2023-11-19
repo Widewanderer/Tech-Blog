@@ -38,20 +38,21 @@ p {
   padding: 5px;
 }
 
-.btn{
+.btn {
   margin: 10px;
-} 
+}
 
 .hide {
   display: none;
 }
 
-.comment-container, .comment-section {
+.comment-container,
+.comment-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   padding: 10px;
 }
 
@@ -64,7 +65,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
 }
 
 #comment-form {
@@ -73,5 +74,10 @@ p {
 }
 
 .footer {
-padding-left: 20px;
+  padding-left: 20px;
+}
+
+#past-posts {
+  border: #2a2a2a 3px solid;
+  border-radius: 15px;
 }
